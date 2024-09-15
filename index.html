@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="simple">
+    <div>
+        <h2>Simple Calculator</h2>
+        <div id="calculator">
+            <input id="displaySimple" readonly>
+
+            <div id="keys">
+                <button onclick="appendTodisplaySimple('+')" class="operator-btn">+</button>
+                <button onclick="appendTodisplaySimple('7')">7</button>
+                <button onclick="appendTodisplaySimple('8')">8</button>
+                <button onclick="appendTodisplaySimple('9')">9</button>
+                <button onclick="appendTodisplaySimple('-')" class="operator-btn">-</button>
+                <button onclick="appendTodisplaySimple('4')">4</button>
+                <button onclick="appendTodisplaySimple('5')">5</button>
+                <button onclick="appendTodisplaySimple('6')">6</button>
+                <button onclick="appendTodisplaySimple('*')" class="operator-btn">*</button>
+                <button onclick="appendTodisplaySimple('1')">1</button>
+                <button onclick="appendTodisplaySimple('2')">2</button>
+                <button onclick="appendTodisplaySimple('3')">3</button>
+                <button onclick="appendTodisplaySimple('/')" class="operator-btn">/</button>
+                <button onclick="appendTodisplaySimple('0')">0</button>
+                <button onclick="appendTodisplaySimple('.')">.</button>
+                <button onclick="calculateSimple()">=</button>
+                <button onclick="cleardisplaySimple()" class="operator-btn">C</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+            <h2>Advance Calculator</h2>
+        <div id="calculator">
+            <div id="history"></div>
+            <input id="display" readonly>
+    
+            <div id="keys">
+                <button onclick="clearEntry()" class="function-btn">CE</button>
+                <button onclick="clearAll()" class="function-btn">C</button>
+                <button onclick="backspace()" class="function-btn">⌫</button>
+                <button onclick="appendToDisplay('/')" class="operator-btn">÷</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')" class="operator-btn">×</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="toggleSign()" class="function-btn">±</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()" class="operator-btn">=</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="simple-script.js"></script>
+</body>
+</html>
