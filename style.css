@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 95%);
@@ -14,6 +15,7 @@ body {
     border-radius: 15px;
     max-width: 400px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 #display, #displaySimple {
